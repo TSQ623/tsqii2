@@ -1,0 +1,47 @@
+/* 使 body 使用 Flexbox 布局，并垂直和水平居中内容 */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    height: 100vh; /* 设置 body 高度为视口高度 */
+    margin: 0; /* 移除默认的外边距 */
+    background-color: #f0f0f0; /* 可选：设置背景颜色 */
+  }
+  
+  /* 设置游戏容器样式 */
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* 保持 canvas 的背景颜色 */
+  canvas {
+    background: #110808;
+    margin-bottom: 10px; /* canvas 和 button 之间的间距 */
+  }
+  
+  /* 登录容器样式 */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .login-container input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .scores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

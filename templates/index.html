@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>居中显示 Canvas 和 Button</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cas.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="myCanvas" width="480" height="320"></canvas>
+        <button id="runButton">Start game</button>
+        <select id="difficultySelect">
+            <option value="easy">简单</option>
+            <option value="medium">一般</option>
+            <option value="hard">困难</option>
+        </select>
+    </div>
+
+    <div class="login-container">
+        <h2>注册</h2>
+        <input type="text" id="username" placeholder="用户名">
+        <button id="registerButton">注册</button>
+        <h2>登录</h2>
+        <input type="text" id="loginUsername" placeholder="用户名">
+        <button id="loginButton">登录</button>
+    </div>
+
+    <div class="scores-container">
+        <h2>分数历史</h2>
+        <ul id="scoresList"></ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='jas.js') }}" defer></script>
+</body>
+</html>
